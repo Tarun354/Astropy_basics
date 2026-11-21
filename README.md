@@ -1,6 +1,6 @@
 # Astropy Basics
 
-Learning the basics of **Astropy** by working with real Hubble (HST) and James Webb (JWST) images.
+Learning the basics of Astropy by working with real Hubble (HST) and James Webb (JWST) images.
 
 ![NGC 1261 zoomed](images/ngc1261_zoom.png)
 
@@ -12,7 +12,8 @@ Learning the basics of **Astropy** by working with real Hubble (HST) and James W
 |----------|--------------|
 | `Handling_HST _FITS_BASICS.ipynb` | Open an HST FITS image of NGC 1261 (ACS, F814W), plot it, use WCS, find stars and measure their brightness |
 | `JWST_FITS_FILE.ipynb` | Open a JWST NIRCam (F444W) image, check for NaN pixels, plot it with WCS and ZScale |
-| `CMD_NGC1261.ipynb` | Measure stars in two HST filters (F275W, F336W), match them and plot a colour–magnitude diagram (CMD) |
+| `ATTEMPT_CMD_NGC1261.ipynb` | First attempt at the CMD (F275W, F336W). Used the header `EXPTIME` in the magnitude formula instead of the exposure time from the file name, so the magnitudes are wrong |
+| `Corrected_CMD_NGC1261.ipynb` | Corrected CMD: measures stars in F275W and F336W, matches them, and plots the colour–magnitude diagram using the exposure time from the file name (e.g. 859 s for `stack-0859s`) |
 
 ## Data
 
