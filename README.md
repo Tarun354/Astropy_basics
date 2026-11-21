@@ -79,7 +79,12 @@ plt.gca().invert_yaxis()     # brighter stars (smaller magnitude) at the top
 
 ## Note on exposure time (HUGS stacks)
 
-The header keyword `EXPTIME` is the *total* exposure time of all images in the stack. HUGS stacks are scaled to the exposure time written in the file name (for example `stack-0859s` means 859 s), so that is the time used in the magnitude formula.
+The header keyword `EXPTIME` is the *total* exposure time of all images in the stack. HUGS stacks are scaled to the exposure time written in the file name (for example, `stack-0859s` means 859 s), so that is the time used in the magnitude formula.
+
+**What changed between the two notebooks:**
+
+- **`ATTEMPT_CMD_NGC1261.ipynb` (incorrect):** used the header `EXPTIME` value, or an average of the individual exposure times, instead of the 859 s from the file name. This gave wrong instrumental magnitudes.
+- **`Corrected_CMD_NGC1261.ipynb`(correct):** uses the exposure time from the file name (e.g. 859 s for `stack-0859s`), which matches how HUGS scales its stacks.
 
 ## Requirements
 
