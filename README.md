@@ -89,5 +89,4 @@ pip install astropy photutils scipy matplotlib numpy
 
 ---
 
-**Author:** Tarun Kumar  
-**Affiliation:** IIT Gandhinagar
+**Contributed by** Tarun Kumar
